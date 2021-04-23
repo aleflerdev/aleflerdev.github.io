@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700;900&display=swap");
+:root {
+  --main-bg-color: #f9f9f9;
+  --main-font-color: #0d0c0b;
+  --secondary-font-color: #f2f2f2;
+  --dark-grey: #403e3b;
+  --med-grey: #8c8a87;
+  --light-grey: #bfbfbd;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  margin: 0 auto;
+  padding: 10px;
+  align-content: center;
+}
+
+#wrapper {
+  margin: 0 auto;
+  height: 100%;
+  font-family: "Open Sans";
+  font-size: 1em;
+  color: var(--main-font-color);
+}
+
+#wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "intro"
+    "contact"
+    "profile"
+    "pro"
+    "edu"
+    "exp"
+    "lic"
+    "cert"
+    "skills";    ;
+  min-width: 320px;
+}
+
+.circle {
+  padding: 15px 0 0 0;
+}
+
+.circle img {
+  margin: 0 10px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid var(--main-font-color);
+  border-radius: 100%;
+}
+
+h1 {
+  margin-top: 3px;
+  font-family: "Raleway";
+  font-weight: 900;
+  color: var(--main-font-color);
+}
+
+.truck__driver,
+.heavy__operator,
+.nav__warfare,
+.bridge__watchman {
+  font-family: "Open Sans";
+  font-size: 1.2em;
+}
+
+.h2__headings {
+  width: 100%;
+  font-size: 1.3em;
+  background-color: var(--dark-grey);
+  color: var(--secondary-font-color);
+  padding: 0 10px;
+}
+
+
+h3 {
+  margin: 0 5px 0 5px;
+  padding: 5px;
+}
+
+h4 {
+  margin-top: 15px;
+}
+
+h1 {
+  border-bottom: 2px solid #000;
+}
+
+.intro__driver {
+  color: var(--light-grey);
+}
+
+h4.truck__driver,
+h4.heavy__operator,
+h4.nav__warfare,
+h4.bridge__watchman {
+  margin-top: 10px;
+  border-bottom: #000;
+  border-bottom-style: solid;
+}
+
+.headings {
+  font-family: "Raleway";
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 0.9em;
+}
+
+.company {
+  padding: 8px 0 0 0;
+}
+
+.date {
+  padding: 5px 0 10px 0;
+}
+
+div.profile {
+  display: grid;
+  place-items: center;
+}
+
+.date {
+  font-size: 0.8em;
+  margin-left: 15px;
+}
+
+/* Grid Areas */
+.intro {
+  display: grid;
+  grid-area: intro;
+  place-items: center;
+}
+
+.contact {
+  grid-area: contact;
+  display: grid;
+  place-items: center left;
+}
+
+.profile {
+  grid-area: profile;
+}
+
+.experience {
+  grid-area: exp;
+}
+
+.license {
+  grid-area: lic;
+}
+
+.certification {
+  grid-area: cert;
+}
+
+.education {
+  grid-area: edu;
+}
+
+.skills {
+  grid-area: skills;
+}
+
+.professional {
+  grid-area: pro;
+}
+
+/* Text Styling */
+.contact a {
+  color: var(--main-font-color);
+}
+
+/* List Styling */
+ul.list {
+  list-style-type: circle;
+  margin: 10px 0 0 15px;
+}
+
+.exp__list {
+  list-style-type: circle;
+  margin: -5px 0 0 15px;
+}
+
+ol {
+  list-style-type: square;
+}
+
+ol li {
+  margin-left: 35px;
+}
+
+li {
+  font-size: 0.9em;
+}
+
+/* SVG Icons Alignment */
+.intro,
+.contact,
+.profile,
+.license,
+.certification,
+.experience,
+.education,
+.skills,
+.professional {
+  border: 0.5px solid var(--light-grey);
+  padding: 10px;
+}
+
+.contract,
+.license,
+.certification,
+.professional,
+.education {
+  display: grid;
+  place-items: center left;
+}
+
+.profile p {
+  margin-bottom: 15px;
+}
+
+svg {
+  margin: 5px 5px 5px 0;
+  width: 25px;
+  vertical-align: middle;
+}
+
+/* Styled Links */
+a {
+  outline: none;
+  text-decoration: none;
+  font-size: 0.9;
+}
+
+a:link,
+a:visited,
+a:focus {
+  padding: 2px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  border-top: var(--dark-grey);
+}
+
+svg:hover {
+  fill: #dadada;
+}
+
+svg {
+  fill: var(--dark-grey);
+  width: 25px;
+  height: 25px;
+}
+
+/* Medium Screens */
+@media (min-width: 740px) {
+
+  #wrapper {
+    border: 1px solid #000;
+    padding: 2px;
+    max-width: 1024px;
+    grid-template-columns: 1fr 1fr 280px;
+    grid-template-areas: 
+    "profile profile intro"
+    "exp    exp   intro"
+    "exp    exp   contact"
+    "exp    exp   pro"
+    "exp    exp   edu"
+    "exp    exp   lic"
+    "exp    exp   cert"
+    "exp    exp   skills";
+  }
+
+
+/* scotchCalculator styles */
+
+table{
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 5px;
+  background-color: silver;
+}
+#subBtn{
+  padding: 5px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 5px;
+}
+#taxBtn{
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 5px;
+}
+#gtotalBtn{
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 5px;
+}
